@@ -8,8 +8,10 @@ test1 = requests.get("https://raw.githubusercontent.com/AlphaBeta906/ATCards/mas
 test1 = test1.text
 te = open("atcards.py", "r")
 tes = te.read()
-if test1 != tes:
-    print ("TEST WORKS!")
+if test1 == tes:
+    print ("Its ok its same")
+else:
+    print ("ITS NOT")
 del test1, te, tes
 
 
