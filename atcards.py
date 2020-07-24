@@ -11,7 +11,7 @@ tes = te.read()
 if test1 == tes:
     print ("Its ok its same")
 else:
-    print ("ITS NOT")
+    print ("Uh oh, the file has been updated. Wait five minuites if it says this again get it updated.")
 del test1, te, tes
 
 
