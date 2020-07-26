@@ -5,3 +5,5 @@ Added weird things that is not part of the game
 Added a card info system and added Republic of Castile and Kingdom of Leon
 ## Version 1.0.2
 Added Belastan
+## Version 1.0.3
+Added Satlantis, Atlantis and Duchy of Kolsea
