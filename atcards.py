@@ -9,5 +9,5 @@ currentcards = {}
 cs = input("> ")
 if cs in list(playercards):
     print (f"{cs}, ATK:{playercards[cs][0]} DEF:{playercards[cs][1]}")
-    print ("/n".join(cardinfo[cs]))
+    print ("\n".join(cardinfo[cs]))
     
