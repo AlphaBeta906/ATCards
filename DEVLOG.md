@@ -7,3 +7,5 @@ Added a card info system and added Republic of Castile and Kingdom of Leon
 Added Belastan
 ## Version 1.0.3
 Added Satlantis, Atlantis and Duchy of Kolsea
+## Version 1.0.4
+Added Alphadonia and fixed */n* bug
