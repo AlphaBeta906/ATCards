@@ -12,4 +12,4 @@ Added Alphadonia and fixed */n* bug
 ## Version 1.0.5
 Added Googleplus Republic
 ## Version 1.0.6
-Added Olderion and added `try:` and `except KeyError` lines
+Added Olderion and added `try:` and `except KeyError:` lines
