@@ -1,4 +1,4 @@
-# UPDATE
+# UPDATE LOG
 ## Version 1.0.0
 Added weird things that is not part of the game
 ## Verion 1.0.1
