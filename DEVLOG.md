@@ -13,3 +13,5 @@ Added Alphadonia and fixed */n* bug
 Added Googleplus Republic
 ## Version 1.0.6
 Added Olderion and added `try:` and `except KeyError:` lines
+## Version 1.0.7
+Added ACTO and some lines to support abbreviations
