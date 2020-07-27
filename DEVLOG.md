@@ -9,3 +9,5 @@ Added Belastan
 Added Satlantis, Atlantis and Duchy of Kolsea
 ## Version 1.0.4
 Added Alphadonia and fixed */n* bug
+## Version 1.0.5
+Added Googleplus Republic
