@@ -15,3 +15,9 @@ Added Googleplus Republic
 Added Olderion and added `try:` and `except KeyError:` lines
 ## Version 1.0.7
 Added ACTO and some lines to support abbreviations
+## Version 1.0.8
+Fixed ''.capitalize()'' bug
+## Version 1.0.8.1
+Added creative commons licence
+## Version 1.0.8.2
+Changed the look
