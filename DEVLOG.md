@@ -1,4 +1,10 @@
-# UPDATE LOG
+# Update Name
+The version number of the ATCards are made of 4 numbers v,x,y,z
+* v is increased by one when a major overhaul is added to the game. Selmon increased
+* x is increased by one when a minor overhaul is added to the game. Rarely increased
+* y is increased by one when a nation or a item card is added to the game. Frequently increased
+* z is increased by one when a bug, patch or a few lines of code are added to the game. Most frequently increased
+# Update Log
 ## Version 1.0.0
 Added weird things that is not part of the game
 ## Verion 1.0.1
@@ -21,3 +27,5 @@ Fixed ''.capitalize()'' bug
 Added creative commons licence
 ## Version 1.0.8.2
 Changed the look
+## Version 1.0.9.2
+Added Google Republic
