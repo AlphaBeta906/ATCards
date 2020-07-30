@@ -30,3 +30,5 @@ Added creative commons licence
 Changed the look
 ## Version 1.0.9.2
 Added Google Republic
+## Version 1.1.9.2
+Added packs
