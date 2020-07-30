@@ -4,6 +4,7 @@ The version number of the ATCards are made of 4 numbers v, x, y, z in the templa
 * x is increased by one when a minor overhaul(like a action) is added to the game. Rarely increased
 * y is increased by one when a nation or a item card is added to the game. Frequently increased
 * z is increased by one when a bug, patch or a few lines of code are added to the game. Most frequently increased
+* a or b is added to the end when a alpha or beta version is added
 # Update Log
 ## Version 1.0.0
 Added weird things that is not part of the game
