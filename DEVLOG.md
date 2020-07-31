@@ -32,3 +32,5 @@ Changed the look
 Added Google Republic
 ## Version 1.1.9.2
 Added packs
+## Version 1.1.10.2
+Added Saxony Kingdom
