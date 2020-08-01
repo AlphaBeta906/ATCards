@@ -11,4 +11,5 @@ You get points by killing cards based on the rarity of the card
 * Ultra-Rare get 10
 * Epic get 20
 * And Legend gets 40
+
 You can also steal or get points by using Special Moves and Items
