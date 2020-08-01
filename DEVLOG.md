@@ -34,3 +34,5 @@ Added Google Republic
 Added packs
 ## Version 1.1.10.2
 Added Saxony Kingdom
+## Version 1.1.11.2
+Addded Kingdom of Israel
