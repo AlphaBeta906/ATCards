@@ -36,3 +36,7 @@ Added packs
 Added Saxony Kingdom
 ## Version 1.1.11.2
 Addded Kingdom of Israel
+## Version 1.2.11.2
+Added loading and deloading lines via pickle
+## Version 1.2.11.3
+Fixed bug
