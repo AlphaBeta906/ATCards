@@ -37,5 +37,5 @@ if cs == "common" or "rare" or "ultra":
 else:
     print ("No pack named '" + cs + "'")
 sleep(3)
-with open('objs.pkl', 'wb') as f:
+with open('things.pkl', 'wb') as f:
     p.dump(currentcards, f)
