@@ -39,5 +39,5 @@ Addded Kingdom of Israel
 ## Version 1.2.11.2
 Added loading and deloading lines via pickle
 ## Version 1.2.11.3
-Fixed bug
+Fixed bug<br>
 *Bug* TypeError: a bytes-like object is required, not 'str' planned to fix at  Version 1.2.12.3
