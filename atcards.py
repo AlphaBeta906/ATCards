@@ -34,7 +34,6 @@ if cs == "common" or "rare" or "ultra":
         enter = input()
         index += 1
         currentcards.append(card)
-        print (", ".join(currentcards))
 else:
     print ("No pack named '" + cs + "'")
 sleep(3)
