@@ -43,3 +43,5 @@ Fixed bug<br>
 *Bug* TypeError: a bytes-like object is required, not 'str' planned to fix at  Version 1.2.12.3
 ## Version 1.2.12.3
 Fixed bug and added test line
+## Version 1.2.12.4
+Removed test line
