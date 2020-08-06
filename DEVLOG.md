@@ -2,7 +2,7 @@
 The version number of the ATCards are made of 4 numbers v, x, y, z in the template v.x.y.z
 * v is increased by one when a major overhaul is added to the game. Selmon increased
 * x is increased by one when a minor overhaul(like a action) is added to the game. Rarely increased
-* y is increased by one when a nation or a item card is added to the game. Frequently increased
+* y is increased by one when a nation, item or a pack is added to the game. Frequently increased
 * z is increased by one when a bug, patch or a few lines of code are added to the game. Most frequently increased
 * a or b is added to the end when a alpha or beta version is added
 # Update Log
@@ -45,3 +45,5 @@ Fixed bug<br>
 Fixed bug and added test line
 ## Version 1.2.12.4
 Removed test line
+## Version 1.2.13.4
+Added UCSO and the Epic pack
