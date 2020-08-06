@@ -47,3 +47,5 @@ Fixed bug and added test line
 Removed test line
 ## Version 1.2.13.4
 Added UCSO and the Epic pack
+## Version 1.3.13.4
+Added money to the game
