@@ -55,3 +55,5 @@ Fixed the money bug
 Added Anti-OK Aliance
 ## Version 1.3.14.6
 Fixed a bug
+## Version 1.3.15.6
+Added 4th German Reich
