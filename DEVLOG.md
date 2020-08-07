@@ -53,3 +53,5 @@ Added money to the game
 Fixed the money bug
 ## Version 1.3.14.5
 Added Anti-OK Aliance
+## Version 1.3.14.6
+Fixed a bug
