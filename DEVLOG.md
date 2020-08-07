@@ -49,3 +49,7 @@ Removed test line
 Added UCSO and the Epic pack
 ## Version 1.3.13.4
 Added money to the game
+## Version 1.3.13.5
+Fixed the money bug
+## Version 1.3.14.5
+Added Anti-OK Aliance
