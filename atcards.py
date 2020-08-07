@@ -9,7 +9,7 @@ cardinfo = {"Republic of Castile": ["Towering Castile: Increaces ATK and DEF for
 with open('things.pkl', 'rb') as f:
     currentcards = list(f.read())
 with open('money.pkl', 'rb') as f:
-    money = int(f.read())
+    money = str(f.read()).replace("b'", "").replace("'", "")
 index = 1
 common = ["The New Republic of Assaria", "New Republic of Chrome", "Olderion", "Satlantis", "Atlantis", "Kingdom of Israel"]
 rare = ["Republic of Castile", "Kingdom of Leon", "Belastan", "DigitalNewia", "Republic of Castile", "Googleplus Republic", "Saxony Kingdom"]
