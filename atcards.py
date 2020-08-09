@@ -1,6 +1,7 @@
 # ATCards 2020
 from time import *
 from random import *
+import sys
 import pickle as p
 print ("ATCards [Version 1.4.15.7]")
 print ("(cc) 2020 Alternate Territories Wiki")
@@ -17,8 +18,8 @@ ultra = ["Googleplus Republic", "ACTO", "PR Asturas"]
 epic = ["UCSO"]
 print ("Common - 10")
 print ("Rare   - 40")
-print ("Ultra  - 100")
-print ("Epic   - 200")
+print ("Ultra  - 10")
+print ("Epic   - 10")
 cs = input("> ").lower()
 if cs == "common" or "rare" or "ultra" or "epic":
     if cs == "common" and money == 10:
@@ -85,6 +86,8 @@ if cs == "common" or "rare" or "ultra" or "epic":
             enter = input()
             index += 1
             currentcards.append(card)
+    else:
+        print ("Too expencive to buy",cs,"pack")
 else:
     print ("No pack named '" + cs + "'")
 sleep(3)
