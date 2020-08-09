@@ -16,6 +16,16 @@ except ModuleNotFoundError:
     print ("This game need you to have the requests module")
     print ("Intstall via using 'python -m pip install requests'")
     sys.exit()
+def dprint(s):
+    lengh = len(s)
+    for c in s:
+        if c == s[lengh - 1]:
+            sys.stdout.write(c + "\n")
+            sys.stdout.flush()
+        else:
+            sys.stdout.write(c)
+            sys.stdout.flush()
+        time.sleep(00.05)
 print ("ATCards [Version 1.5.15.12]")
 print ("(cc) 2020 Alternate Territories Wiki")
 playercards = {"Republic of Castile": ["120", "90"], "Kingdom of Leon": ["100", "110"], "Belastan": ["110", "100"], "Duchy of Koelsa": ["90", "100"], "Satlantis": ["80", "90"], "Atlantis": ["90", "90"], "Alphadonia": ["130", "160"], "Googleplus Republic": ["100", "130"], "The New Republic of Assaria": ["70", "90"], "Olderion": ["30", "50"], "PR Asturas": ["150", "160"], "ACTO": ["200", "180"], "DigitalNewia": ["120", "130"], "New Republic of Chrome": ["50", "60"], "Saxony Kingdom": ["120", "100"], "Kingdom of Israel": ["50", "80"], "UCSO": ["200", "170"], "Anti-OK Alliance": ["130", "120"], "4th German Reich": ["70", "90"]}
@@ -29,10 +39,10 @@ common = ["The New Republic of Assaria", "New Republic of Chrome", "Olderion", "
 rare = ["Republic of Castile", "Kingdom of Leon", "Belastan", "DigitalNewia", "Republic of Castile", "Googleplus Republic", "Saxony Kingdom", "Anti-OK Alliance"]
 ultra = ["Googleplus Republic", "ACTO", "PR Asturas"]
 epic = ["UCSO"]
-print ("Common - 10")
-print ("Rare   - 40")
-print ("Ultra  - 10")
-print ("Epic   - 10")
+dprint ("Common - 10")
+dprint ("Rare   - 40")
+dprint ("Ultra  - 10")
+dprint ("Epic   - 10")
 cs = input("> ").lower()
 if cs == "common" or "rare" or "ultra" or "epic":
     if cs == "common" and money == 10:
