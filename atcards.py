@@ -48,16 +48,16 @@ if cs == "common" or "rare" or "ultra" or "epic":
     if cs == "common" and money == 10:
         money -= 10
         for x in range(1, 6):
-            print ("====Card " + str(index) + "====")
+            dprint ("====Card " + str(index) + "====")
             card = choice(common)
-            print (f"{card}, ATK: {playercards[card][0]} DEF: {playercards[card][1]}")
+            dprint (f"{card}, ATK: {playercards[card][0]} DEF: {playercards[card][1]}")
             sleep(1)
-            print ("Special Moves:")
+            dprint ("Special Moves:")
             sleep(1)
             try:
-                print ("\n".join(cardinfo[card]))
+                dprint ("\n".join(cardinfo[card]))
             except KeyError:
-                print ("No special moves")
+                dprint ("No special moves")
             enter = input()
             del enter
             index += 1
@@ -65,16 +65,16 @@ if cs == "common" or "rare" or "ultra" or "epic":
     elif cs == "rare" and money == 40:
         money -= 40
         for x in range(1, 6):
-            print ("====Card " + str(index) + "====")
+            dprint ("====Card " + str(index) + "====")
             card = choice(rare)
-            print (f"{card}, ATK: {playercards[card][0]} DEF: {playercards[card][1]}")
+            dprint (f"{card}, ATK: {playercards[card][0]} DEF: {playercards[card][1]}")
             sleep(1)
-            print ("Special Moves:")
+            dprint ("Special Moves:")
             sleep(1)
             try:
-                print ("\n".join(cardinfo[card]))
+                dprint ("\n".join(cardinfo[card]))
             except KeyError:
-                print ("No special moves")
+                dprint ("No special moves")
             enter = input()
             del enter
             index += 1
@@ -82,32 +82,32 @@ if cs == "common" or "rare" or "ultra" or "epic":
     elif cs == "ultra" and money == 100:
         money -= 100
         for x in range(1, 6):
-            print ("====Card " + str(index) + "====")
+            dprint ("====Card " + str(index) + "====")
             card = choice(ultra)
-            print (f"{card}, ATK: {playercards[card][0]} DEF: {playercards[card][1]}")
+            dprint (f"{card}, ATK: {playercards[card][0]} DEF: {playercards[card][1]}")
             sleep(1)
-            print ("Special Moves:")
+            dprint ("Special Moves:")
             sleep(1)
             try:
-                print ("\n".join(cardinfo[card]))
+                dprint ("\n".join(cardinfo[card]))
             except KeyError:
-                print ("No special moves")
+                dprint ("No special moves")
             enter = input()
             index += 1
             currentcards.append(card)
     elif cs == "epic" and money == 200:
         money -= 200
         for x in range(1, 6):
-            print ("====Card " + str(index) + "====")
+            dprint ("====Card " + str(index) + "====")
             card = choice(epic)
-            print (f"{card}, ATK: {playercards[card][0]} DEF: {playercards[card][1]}")
+            dprint (f"{card}, ATK: {playercards[card][0]} DEF: {playercards[card][1]}")
             sleep(1)
-            print ("Special Moves:")
+            dprint ("Special Moves:")
             sleep(1)
             try:
-                print ("\n".join(cardinfo[card]))
+                dprint ("\n".join(cardinfo[card]))
             except KeyError:
-                print ("No special moves")
+                dprint ("No special moves")
             enter = input()
             del enter
             index += 1
