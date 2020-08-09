@@ -39,10 +39,10 @@ common = ["The New Republic of Assaria", "New Republic of Chrome", "Olderion", "
 rare = ["Republic of Castile", "Kingdom of Leon", "Belastan", "DigitalNewia", "Republic of Castile", "Googleplus Republic", "Saxony Kingdom", "Anti-OK Alliance"]
 ultra = ["Googleplus Republic", "ACTO", "PR Asturas"]
 epic = ["UCSO"]
-dprint ("Common - 10")
-dprint ("Rare   - 40")
-dprint ("Ultra  - 10")
-dprint ("Epic   - 10")
+dprint ("Common - 10 ")
+dprint ("Rare   - 40 ")
+dprint ("Ultra  - 100")
+dprint ("Epic   - 200")
 cs = input("> ").lower()
 if cs == "common" or "rare" or "ultra" or "epic":
     if cs == "common" and money == 10:
