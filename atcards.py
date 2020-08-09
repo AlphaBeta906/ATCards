@@ -19,11 +19,8 @@ except ModuleNotFoundError:
 def dprint(s):
     lengh = len(s)
     for c in s:
-        if c == s[lengh - 1]:
-            print (c)
-        else:
-            sys.stdout.write(c)
-            sys.stdout.flush()
+        sys.stdout.write(c)
+        sys.stdout.flush()
         sleep(00.05)
 print ("ATCards [Version 1.5.15.12]")
 print ("(cc) 2020 Alternate Territories Wiki")
