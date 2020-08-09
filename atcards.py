@@ -20,9 +20,7 @@ def dprint(s):
     lengh = len(s)
     for c in s:
         if c == s[lengh - 1]:
-            sys.stdout.write(c)
-            print ()
-            sys.stdout.flush()
+            print (c)
         else:
             sys.stdout.write(c)
             sys.stdout.flush()
