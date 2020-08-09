@@ -59,3 +59,5 @@ Fixed a bug
 Added 4th German Reich
 ## Version 1.4.15.6
 Added a use for money
+## Version 1.4.15.7
+Added a menu for buying
