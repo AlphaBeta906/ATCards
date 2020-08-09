@@ -16,12 +16,6 @@ except ModuleNotFoundError:
     print ("This game need you to have the requests module")
     print ("Intstall via using 'python -m pip install requests'")
     sys.exit()
-def dprint(s):
-    lengh = len(s)
-    for c in s:
-        sys.stdout.write(c)
-        sys.stdout.flush()
-        sleep(00.05)
 print ("ATCards [Version 1.5.15.12]")
 print ("(cc) 2020 Alternate Territories Wiki")
 playercards = {"Republic of Castile": ["120", "90"], "Kingdom of Leon": ["100", "110"], "Belastan": ["110", "100"], "Duchy of Koelsa": ["90", "100"], "Satlantis": ["80", "90"], "Atlantis": ["90", "90"], "Alphadonia": ["130", "160"], "Googleplus Republic": ["100", "130"], "The New Republic of Assaria": ["70", "90"], "Olderion": ["30", "50"], "PR Asturas": ["150", "160"], "ACTO": ["200", "180"], "DigitalNewia": ["120", "130"], "New Republic of Chrome": ["50", "60"], "Saxony Kingdom": ["120", "100"], "Kingdom of Israel": ["50", "80"], "UCSO": ["200", "170"], "Anti-OK Alliance": ["130", "120"], "4th German Reich": ["70", "90"]}
@@ -35,76 +29,76 @@ common = ["The New Republic of Assaria", "New Republic of Chrome", "Olderion", "
 rare = ["Republic of Castile", "Kingdom of Leon", "Belastan", "DigitalNewia", "Republic of Castile", "Googleplus Republic", "Saxony Kingdom", "Anti-OK Alliance"]
 ultra = ["Googleplus Republic", "ACTO", "PR Asturas"]
 epic = ["UCSO"]
-dprint ("Common - 10 ")
-dprint ("Rare   - 40 ")
-dprint ("Ultra  - 100")
-dprint ("Epic   - 200")
+print ("Common - 10 ")
+print ("Rare   - 40 ")
+print ("Ultra  - 100")
+print ("Epic   - 200")
 cs = input("> ").lower()
 if cs == "common" or "rare" or "ultra" or "epic":
     if cs == "common" and money == 10:
         money -= 10
         for x in range(1, 6):
-            dprint ("====Card " + str(index) + "====")
+            print ("====Card " + str(index) + "====")
             card = choice(common)
-            dprint (f"{card}, ATK: {playercards[card][0]} DEF: {playercards[card][1]}")
+            print (f"{card}, ATK: {playercards[card][0]} DEF: {playercards[card][1]}")
             sleep(1)
-            dprint ("Special Moves:")
+            print ("Special Moves:")
             sleep(1)
             try:
-                dprint ("\n".join(cardinfo[card]))
+                print ("\n".join(cardinfo[card]))
             except KeyError:
-                dprint ("No special moves")
-            enter = input()
+                print ("No special moves")
+            enter = input("==PRESS ENTER TO CONTINUE==")
             del enter
             index += 1
             currentcards.append(card)
     elif cs == "rare" and money == 40:
         money -= 40
         for x in range(1, 6):
-            dprint ("====Card " + str(index) + "====")
+            print ("====Card " + str(index) + "====")
             card = choice(rare)
-            dprint (f"{card}, ATK: {playercards[card][0]} DEF: {playercards[card][1]}")
+            print (f"{card}, ATK: {playercards[card][0]} DEF: {playercards[card][1]}")
             sleep(1)
-            dprint ("Special Moves:")
+            print ("Special Moves:")
             sleep(1)
             try:
-                dprint ("\n".join(cardinfo[card]))
+                print ("\n".join(cardinfo[card]))
             except KeyError:
-                dprint ("No special moves")
-            enter = input()
+                print ("No special moves")
+            enter = input("==PRESS ENTER TO CONTINUE==")
             del enter
             index += 1
             currentcards.append(card)
     elif cs == "ultra" and money == 100:
         money -= 100
         for x in range(1, 6):
-            dprint ("====Card " + str(index) + "====")
+            print ("====Card " + str(index) + "====")
             card = choice(ultra)
-            dprint (f"{card}, ATK: {playercards[card][0]} DEF: {playercards[card][1]}")
+            print (f"{card}, ATK: {playercards[card][0]} DEF: {playercards[card][1]}")
             sleep(1)
-            dprint ("Special Moves:")
+            print ("Special Moves:")
             sleep(1)
             try:
-                dprint ("\n".join(cardinfo[card]))
+                print ("\n".join(cardinfo[card]))
             except KeyError:
-                dprint ("No special moves")
-            enter = input()
+                print ("No special moves")
+            enter = input("==PRESS ENTER TO CONTINUE==")
             index += 1
             currentcards.append(card)
     elif cs == "epic" and money == 200:
         money -= 200
         for x in range(1, 6):
-            dprint ("====Card " + str(index) + "====")
+            print ("====Card " + str(index) + "====")
             card = choice(epic)
-            dprint (f"{card}, ATK: {playercards[card][0]} DEF: {playercards[card][1]}")
+            print (f"{card}, ATK: {playercards[card][0]} DEF: {playercards[card][1]}")
             sleep(1)
-            dprint ("Special Moves:")
+            print ("Special Moves:")
             sleep(1)
             try:
-                dprint ("\n".join(cardinfo[card]))
+                print ("\n".join(cardinfo[card]))
             except KeyError:
-                dprint ("No special moves")
-            enter = input()
+                print ("No special moves")
+            enter = input("==PRESS ENTER TO CONTINUE==")
             del enter
             index += 1
             currentcards.append(card)
