@@ -25,7 +25,6 @@ with open('things.pkl', 'rb') as f:
 with open('money.pkl', 'rb') as f:
     money = str(f.read()).replace("b'", "").replace("'", "")
     money = len(money)
-    #print (money)
 index = 1
 common = ["The New Republic of Assaria", "New Republic of Chrome", "Olderion", "Satlantis", "Atlantis", "Kingdom of Israel", "4th German Reich", "Communist State of Honey"]
 rare = ["Republic of Castile", "Kingdom of Leon", "Belastan", "DigitalNewia", "Republic of Castile", "Googleplus Republic", "Saxony Kingdom", "Anti-OK Alliance"]
