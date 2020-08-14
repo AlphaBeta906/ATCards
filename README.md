@@ -1,5 +1,6 @@
 # ATCards
 ![CodeQL](https://github.com/AlphaBeta906/ATCards/workflows/CodeQL/badge.svg)
+<br>
 Generate wars, strategize and collect cards. You heard it right!
 ## Download
 * First, dowload Python 3
