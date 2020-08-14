@@ -1,6 +1,7 @@
 ![CodeQL](https://github.com/AlphaBeta906/ATCards/workflows/CodeQL/badge.svg)
 ![versions](https://img.shields.io/pypi/pyversions/pybadges.svg)
-![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)
+![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)]
+![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)
 # ATCards
 Generate wars, strategize and collect cards. You heard it right!
 ## Download
