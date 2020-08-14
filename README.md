@@ -1,4 +1,4 @@
-![CodeQL](https://github.com/AlphaBeta906/ATCards/workflows/CodeQL/badge.svg)[![Github All Releases](https://img.shields.io/github/downloads/atom/atom/total.svg?style=flat)]()  
+![CodeQL](https://github.com/AlphaBeta906/ATCards/workflows/CodeQL/badge.svg) ![](https://img.shields.io/badge/python-3.4+-blue.svg)
 # ATCards
 Generate wars, strategize and collect cards. You heard it right!
 ## Download
