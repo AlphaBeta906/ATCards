@@ -26,56 +26,69 @@ common = ["The New Republic of Assaria", "New Republic of Chrome", "Olderion", "
 rare = ["Republic of Castile", "Kingdom of Leon", "Belastan", "DigitalNewia", "Republic of Castile", "Googleplus Republic", "Saxony Kingdom", "Anti-OK Alliance", "Gyrwhen Republic", "Russian Kingdoms", "South Alliance"]
 ultra = ["Googleplus Republic", "ACTO", "PR Asturas"]
 epic = ["UCSO"]
-print ("________________________")
-print ("|        Prices        |")
-print ("|Common - 10           |")
-print ("|Rare   - 40           |")
-print ("________________________")
-cs = input("You need a starter pack buy one > ").lower()
-if (cs == "common" or "rare" or "ultra" or "epic") or (cs in inventory):
-    if cs == "common" and money >= 10:
-        if not cs in inventory:
+def shopcards(money):
+    print ("________________________")
+    print ("|        Prices        |")
+    if money >= 200:
+        print ("|Common - 10           |")
+        print ("|Rare   - 40           |")
+        print ("|Ultra  - 100          |")
+        print ("|Epic   - 200          |")
+    elif money >= 100:
+        print ("|Common - 10           |")
+        print ("|Rare   - 40           |")
+        print ("|Ultra  - 100          |")
+    elif money >= 40:
+        print ("|Common - 10           |")
+        print ("|Rare   - 40           |")
+    elif money >= 10:
+        print ("|Common - 10           |")
+    print ("________________________")
+    cs = input("Welcome to the Card Center, buy a card > ").lower()
+    index = 0
+    global currentcards
+    currentcards = []
+    if (cs == "common" or "rare" or "ultra" or "epic") or (cs in inventory):
+        if cs == "common" and money >= 10:
             money -= 10
-        for x in range(1, 6):
-            print ("====Card " + str(index) + "====")
-            card = choice(common)
-            print (f"{card}, ATK: {playercards[card][0]} DEF: {playercards[card][1]}")
-            sleep(1)
-            print ("Special Moves:")
-            sleep(1)
-            try:
-                print ("\n".join(cardinfo[card]))
-            except KeyError:
-                print ("No special moves")
-            enter = input("==PRESS ENTER TO CONTINUE==")
-            del enter
-            index += 1
-            currentcards.append(card)
-    elif cs == "rare" and money >= 40:
-        if not cs in inventory:
+            for x in range(1, 6):
+                print ("====Card " + str(index) + "====")
+                card = choice(common)
+                print (f"{card}, ATK: {playercards[card][0]} DEF: {playercards[card][1]}")
+                sleep(1)
+                print ("Special Moves:")
+                sleep(1)
+                try:
+                    print ("\n".join(cardinfo[card]))
+                except KeyError:
+                    print ("No special moves")
+                enter = input("==PRESS ENTER TO CONTINUE==")
+                del enter
+                index += 1
+                currentcards.append(card)
+        elif cs == "rare" and money >= 40:
             money -= 40
-        for x in range(1, 6):
-            print ("====Card " + str(index) + "====")
-            card = choice(rare)
-            print (f"{card}, ATK: {playercards[card][0]} DEF: {playercards[card][1]}")
-            sleep(1)
-            print ("Special Moves:")
-            sleep(1)
-            try:
-                print ("\n".join(cardinfo[card]))
-            except KeyError:
-                print ("No special moves")
-            enter = input("==PRESS ENTER TO CONTINUE==")
-            del enter
-            index += 1
-            currentcards.append(card)
-    elif cs == "ultra" and money > 100:
-        if not cs in inventory:
+            for x in range(1, 6):
+                print ("====Card " + str(index) + "====")
+                card = choice(rare)
+                print (f"{card}, ATK: {playercards[card][0]} DEF: {playercards[card][1]}")
+                sleep(1)
+                print ("Special Moves:")
+                sleep(1)
+                try:
+                    print ("\n".join(cardinfo[card]))
+                except KeyError:
+                    print ("No special moves")
+                enter = input("==PRESS ENTER TO CONTINUE==")
+                del enter
+                index += 1
+                currentcards.append(card)
+        elif cs == "ultra" and money > 100:
             money -= 100
-        for x in range(1, 6):
-            print ("====Card " + str(index) + "====")
-            card = choice(ultra)
-            print (f"{card}, ATK: {playercards[card][0]} DEF: {playercards[card][1]}")
+            for x in range(1, 6):
+                print ("====Card " + str(index) + "====")
+                card = choice(ultra)
+                print (f"{card}, ATK: {playercards[card][0]} DEF: {playercards[card][1]}")
             sleep(1)
             print ("Special Moves:")
             sleep(1)
@@ -83,28 +96,28 @@ if (cs == "common" or "rare" or "ultra" or "epic") or (cs in inventory):
                 print ("\n".join(cardinfo[card]))
             except KeyError:
                 print ("No special moves")
-            enter = input("==PRESS ENTER TO CONTINUE==")
+            enter = input("==PRESS ENTER TO CONTINUE==\n")
             index += 1
             currentcards.append(card)
-    elif cs == "epic" and money > 200:
-        if not cs in inventory:
+        elif cs == "epic" and money > 200:
             money -= 200
-        for x in range(1, 6):
-            print ("====Card " + str(index) + "====")
-            card = choice(epic)
-            print (f"{card}, ATK: {playercards[card][0]} DEF: {playercards[card][1]}")
-            sleep(1)
-            print ("Special Moves:")
-            sleep(1)
-            try:
-                print ("\n".join(cardinfo[card]))
-            except KeyError:
-                print ("No special moves")
-            enter = input("==PRESS ENTER TO CONTINUE==")
-            del enter
-            index += 1
-            currentcards.append(card)
+            for x in range(1, 6):
+                print ("====Card " + str(index) + "====")
+                card = choice(epic)
+                print (f"{card}, ATK: {playercards[card][0]} DEF: {playercards[card][1]}")
+                sleep(1)
+                print ("Special Moves:")
+                sleep(1)
+                try:
+                    print ("\n".join(cardinfo[card]))
+                except KeyError:
+                    print ("No special moves")
+                enter = input("==PRESS ENTER TO CONTINUE==")
+                del enter
+                index += 1
+                currentcards.append(card)
+        else:
+            print ("Too expencive to buy",cs,"pack")
     else:
-        print ("Too expencive to buy",cs,"pack")
-else:
-    print ("No pack named '" + cs + "'")
+        print ("No pack named '" + cs + "'")
+shopcards(money)
