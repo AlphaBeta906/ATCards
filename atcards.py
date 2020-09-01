@@ -16,6 +16,8 @@ except ModuleNotFoundError:
     print ("This game need you to have the requests module")
     print ("Intstall via using 'python -m pip install requests'")
     sys.exit()
+
+# Data
 print ("ATCards [Version 1.8.18.16]")
 print ("(cc) 2020 Alternate Territories Wiki")
 playercards = {"Republic of Castile": ["120", "90"], "Kingdom of Leon": ["100", "110"], "Belastan": ["110", "100"], "Duchy of Koelsa": ["90", "100"], "Satlantis": ["80", "90"], "Atlantis": ["90", "90"], "Alphadonia": ["130", "160"], "Googleplus Republic": ["100", "130"], "The New Republic of Assaria": ["70", "90"], "Olderion": ["30", "50"], "PR Asturas": ["150", "160"], "ACTO": ["200", "180"], "DigitalNewia": ["120", "130"], "New Republic of Chrome": ["50", "60"], "Saxony Kingdom": ["120", "100"], "Kingdom of Israel": ["50", "80"], "UCSO": ["200", "170"], "Anti-OK Alliance": ["130", "120"], "4th German Reich": ["70", "90"], "Communist State of Honey": ["70", "80"], "Gyrwhen Republic": ["120", "100"], "Russian Kingdoms": ["130", "150"], "South Alliance": ["120", "150"], "Carabis": ["50", "60"]}
@@ -24,10 +26,13 @@ common = ["The New Republic of Assaria", "New Republic of Chrome", "Olderion", "
 rare = ["Republic of Castile", "Kingdom of Leon", "Belastan", "DigitalNewia", "Republic of Castile", "Googleplus Republic", "Saxony Kingdom", "Anti-OK Alliance", "Gyrwhen Republic", "Russian Kingdoms", "South Alliance"]
 ultra = ["Googleplus Republic", "ACTO", "PR Asturas"]
 epic = ["UCSO"]
+
+# Functions
 def setup():
     global currentcards, money
     currentcards = []
     money = 100
+    
 def shopcards():
     print ("________________________")
     print ("|        Prices        |")
@@ -120,6 +125,8 @@ def shopcards():
             print ("Too expencive to buy",cs,"pack")
     else:
         print ("No pack named '" + cs + "'")
+
+# Game
 setup()
 print ("Let me tell you a story...")
 sleep(3)
