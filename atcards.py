@@ -2,7 +2,6 @@
 from time import *
 from random import *
 import sys
-import pickle as p
 try:
     import requests
     file = requests.get("https://raw.githubusercontent.com/AlphaBeta906/ATCards/master/atcards.py")
