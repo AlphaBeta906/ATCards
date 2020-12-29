@@ -161,3 +161,4 @@ print ("Worldia is a dangerous place")
 sleep(2.5)
 print ("Good luck!")
 # Here starts the thing...
+shopcards()
